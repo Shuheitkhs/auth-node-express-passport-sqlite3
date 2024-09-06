@@ -4,7 +4,7 @@ const LocalStrategy = require("passport-local").Strategy;
 const bodyParser = require("body-parser");
 const session = require("express-session");
 const bcrypt = require("bcrypt");
-const db = require("./db"); // SQLite データベースのインポート
+const db = require("../db"); // SQLite データベースのインポート
 
 const app = express();
 const saltRounds = 10; // bcryptでのハッシュ化の強度
